@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Anush Bathla — Software Engineer and B.Tech CSE (AI/ML) student. Cinematic portfolio.">
+  <meta name="theme-color" content="#09090b">
+  <title>Anush | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>[data-anim],.intro-fade,.ch,.k,.chips span{opacity:1!important;transform:none!important;clip-path:none!important}.gate{display:none}body.locked{overflow:auto;height:auto}.topbar{opacity:1;transform:none}.hero-photo-inner,.hero-bgtext span{clip-path:none}</style></noscript>
+</head>
+<body class="locked">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <audio id="portfolio-audio" preload="auto" loop>
+    <source src="assets/portfolio-theme.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ENTRY GATE: loader -> click to enter (this click is what lets the browser play music instantly) -->
+  <div class="gate" id="gate">
+    <div class="gate-bg"></div>
+    <div class="gate-inner">
+      <div class="gate-top"><span>ANUSH</span><span>PORTFOLIO © 2026</span></div>
+      <div class="gate-center">
+        <div class="gate-count"><span id="gate-num">0</span><i>%</i></div>
+        <div class="gate-bar"><b id="gate-fill"></b></div>
+        <button class="gate-enter" id="gate-enter" type="button" disabled>
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span id="gate-enter-label">LOADING…</span>
+          <em>↗</em>
+        </button>
+        <p class="gate-hint">SOUND ON FOR THE FULL EXPERIENCE</p>
+      </div>
+      <div class="gate-bottom"><span>MEERUT, INDIA</span><span>SOFTWARE ENGINEER / AI &amp; ML</span></div>
+    </div>
+  </div>
+
+  <button class="skip-intro" id="skip-intro" type="button" hidden>SKIP INTRO ›</button>
+
+  <button class="music-control" id="music-control" type="button" aria-label="Play background music" aria-pressed="false">
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label">PLAY MUSIC</span>
+    <span class="music-state">＋</span>
+  </button>
+
+  <header class="topbar">
+    <a class="brand" href="#home">A<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#contact">CONTACT</a>
+      <a class="nav-cta" href="Anush_Bathla.pdf" download>RESUME <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO / CINEMATIC INTRO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bgtext" aria-hidden="true"><span>PORT</span><span class="outline">FOLIO</span></div>
+      <div class="hero-photo" aria-hidden="true">
+        <div class="hero-photo-inner"><img src="assets/anush-profile.jpg" alt=""></div>
+        <div class="hero-photo-fade"></div>
+        <div class="scanline"></div>
+      </div>
+
+      <div class="hero-content section-wrap">
+        <div class="hero-topline intro-fade"><span class="status-dot"></span> AVAILABLE FOR INTERNSHIPS <span class="topline-right">MEERUT, INDIA · 2026</span></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-intro-type>HELLO, I'M</p>
+          <h1 class="hero-name" data-intro-type="55">ANUSH </span></h1>
+          <div class="role-line" data-intro-type>SOFTWARE ENGINEER <b>/</b> AI &amp; ML STUDENT</div>
+          <div class="typing-line intro-fade"><span class="typing-prefix">CURRENTLY EXPLORING:</span> <span id="typing-text"></span><i></i></div>
+          <p class="intro" data-intro-type="14">I build thoughtful digital experiences and explore how technology can solve real-world problems. Currently learning, experimenting, and turning ideas into working prototypes.</p>
+          <div class="hero-actions intro-fade"><a class="button button-red" href="#projects">EXPLORE MY WORK <span>↗</span></a><a class="text-link" href="mailto:anushbathla@gmail.com">LET'S CONNECT <span>↗</span></a></div>
+          <div class="social-row intro-fade"><a href="https://github.com/anushbathla-07" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/mr-anush-03b422380/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:anushbathla@gmail.com">EMAIL ↗</a></div>
+        </div>
+
+        <div class="hero-tags intro-fade" aria-hidden="true">
+          <div class="tag-card"><small>FIG. 01</small><span>THE DEVELOPER</span></div>
+          <div class="portrait-sticker">BUILD<br>IN<br>PUBLIC</div>
+        </div>
+
+        <div class="hero-bottom intro-fade"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 05</span></div>
+      </div>
+
+      <div class="ticker intro-fade" aria-label="Areas of interest"><div class="ticker-track"><span>SOFTWARE ENGINEERING ✳</span><span>WEB DEVELOPMENT ✳</span><span>ARTIFICIAL INTELLIGENCE ✳</span><span>PROBLEM SOLVING ✳</span><span>SOFTWARE ENGINEERING ✳</span><span>WEB DEVELOPMENT ✳</span><span>ARTIFICIAL INTELLIGENCE ✳</span><span>PROBLEM SOLVING ✳</span></div></div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats section-wrap" aria-label="At a glance">
+      <div class="stat" data-anim="up" style="--d:0"><b data-count="7.8" data-dec="1">0</b><span>CURRENT CGPA</span></div>
+      <div class="stat" data-anim="up" style="--d:1"><b data-count="3" data-pad="2">0</b><span>PROJECT CONCEPTS</span></div>
+      <div class="stat" data-anim="up" style="--d:2"><b data-count="10" data-suffix="">0</b><span>TECHNOLOGIES</span></div>
+      <div class="stat" data-anim="up" style="--d:3"><b data-count="2029">0</b><span>GRADUATION</span></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section-wrap section-block" id="about">
+      <div class="section-kicker" data-anim="line"><span>01 / THE PERSON</span><span>ABOUT ME</span></div>
+      <div class="section-heading"><h2 class="kinetic-heading" data-kinetic>Background <em>&amp;</em><br>Philosophy<span>.</span></h2><p class="side-note" data-type="18">LEARNING BY BUILDING.<br>GROWING WITH EVERY ITERATION.</p></div>
+      <div class="about-grid">
+        <figure class="about-photo" data-anim="plain">
+          <div class="about-photo-frame"><img src="assets/anush-profile.jpg" alt="Anush Bathla portrait" loading="lazy"></div>
+          <figcaption><span>FIG. 02</span><span>CURIOUS MIND. BUILDER'S HANDS.</span></figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="lead" data-type="16">I’m a Computer Science and Engineering student specializing in <span>Artificial Intelligence &amp; Machine Learning</span> at IIMT University, Meerut.</p>
+          <div class="about-detail">
+            <p data-type="9">My interests sit at the intersection of software development, web technologies, and practical problem-solving. I enjoy taking an idea from an early concept to a clear, usable prototype while strengthening my engineering fundamentals.</p>
+            <p data-type="9">Right now, I’m focused on improving my development skills, exploring new technologies, and preparing for software engineering internship opportunities.</p>
+            <div class="education" data-anim="up"><small>EDUCATION</small><strong>B.Tech — CSE (AI/ML)</strong><span>IIMT University, Meerut · Expected 2029</span><span>Current CGPA <b>7.8</b></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills section-wrap section-block" id="skills">
+      <div class="section-kicker" data-anim="line"><span>02 / TOOLKIT</span><span>TECHNICAL SKILLS</span></div>
+      <div class="section-heading"><h2 class="kinetic-heading" data-kinetic>Tools of<br>the trade<span>.</span></h2><p class="side-note" data-type="18">A GROWING TOOLKIT<br>FOR BUILDING WHAT'S NEXT.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card" data-anim="up" style="--d:0"><span class="card-index">01</span><h3>PROGRAMMING</h3><div class="chips"><span>Python</span><span>C</span><span>JavaScript</span></div></article>
+        <article class="skill-card" data-anim="up" style="--d:1"><span class="card-index">02</span><h3>WEB DEVELOPMENT</h3><div class="chips"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span></div></article>
+        <article class="skill-card" data-anim="up" style="--d:2"><span class="card-index">03</span><h3>TOOLS</h3><div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span></div></article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects section-wrap section-block" id="projects">
+      <div class="section-kicker" data-anim="line"><span>03 / SELECTED WORK</span><span>PROJECTS &amp; CONCEPTS</span></div>
+      <div class="section-heading"><h2 class="kinetic-heading" data-kinetic>Ideas into<br><em>action</em><span>.</span></h2><p class="side-note" data-type="18">CONCEPTS, PROTOTYPES<br>&amp; PROBLEMS WORTH SOLVING.</p></div>
+      <div class="project-list">
+        <article class="project" data-anim="left"><div class="project-number">01</div><div class="project-main"><div class="project-type">EDTECH · WEB PLATFORM</div><h3>MyCampus</h3><p data-type="8">A centralized student event management platform concept designed to bring university events and competitions into one place.</p><div class="project-tags"><span>EVENT DISCOVERY</span><span>STUDENT REGISTRATION</span><span>WEB APP</span></div></div><div class="project-arrow">↗</div></article>
+        <article class="project" data-anim="left"><div class="project-number">02</div><div class="project-main"><div class="project-type">IOT · WORKER SAFETY</div><h3>Suraksha Kavach</h3><p data-type="8">An in-progress smart safety belt concept for sewer workers, planned to detect methane, carbon monoxide, and hydrogen sulphide, with buzzer, LED, SOS, GPS, SMS, and OLED alerts.</p><div class="project-tags"><span>GAS SENSORS</span><span>ARDUINO</span><span>IOT CONCEPT</span></div></div><div class="project-arrow">↗</div></article>
+        <article class="project" data-anim="left"><div class="project-number">03</div><div class="project-main"><div class="project-type">AI · SUSTAINABILITY</div><h3>Smart Waste-to-Value Network</h3><p data-type="8">A digital platform concept connecting waste generators, collection workers, and recycling services through GPS tracking, AI-assisted image recognition, and waste categorization.</p><div class="project-tags"><span>AI IMAGE RECOGNITION</span><span>GPS TRACKING</span><span>RECYCLING</span></div></div><div class="project-arrow">↗</div></article>
+      </div>
+      <p class="project-note" data-type="10">PROJECT STATUS IS DESCRIBED AS CONCEPT OR IN-PROGRESS WHERE APPLICABLE.</p>
+    </section>
+
+    <!-- ============ INTERESTS ============ -->
+    <section class="interests section-wrap section-block">
+      <div class="section-kicker" data-anim="line"><span>04 / WHAT DRIVES ME</span><span>AREAS OF INTEREST</span></div>
+      <div class="interest-row" data-anim="left" style="--d:0"><span>01</span><h3>Software Engineering</h3><b>↗</b></div>
+      <div class="interest-row" data-anim="left" style="--d:1"><span>02</span><h3>Web Application Development</h3><b>↗</b></div>
+      <div class="interest-row" data-anim="left" style="--d:2"><span>03</span><h3>Data Structures &amp; Algorithms</h3><b>↗</b></div>
+      <div class="interest-row" data-anim="left" style="--d:3"><span>04</span><h3>Artificial Intelligence &amp; Machine Learning</h3><b>↗</b></div>
+      <div class="interest-row" data-anim="left" style="--d:4"><span>05</span><h3>Automation</h3><b>↗</b></div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section-wrap section-block" id="contact">
+      <div class="section-kicker" data-anim="line"><span>05 / YOUR TURN</span><span>CONTACT</span></div>
+      <p class="eyebrow" data-type="40">HAVE A PROJECT OR OPPORTUNITY?</p>
+      <h2 class="kinetic-heading" data-kinetic>LET'S MAKE<br>SOMETHING <span>MATTER.</span></h2>
+      <a class="contact-mail" data-anim="up" href="mailto:anushbathla@gmail.com">ANUSHBATHLA@GMAIL.COM <b>↗</b></a>
+      <div class="contact-bottom" data-anim="up"><span>MEERUT, UTTAR PRADESH, INDIA</span><span><a href="https://github.com/anushbathla-07" target="_blank" rel="noreferrer">GITHUB</a> · <a href="https://www.linkedin.com/in/mr-anush-03b422380/" target="_blank" rel="noreferrer">LINKEDIN</a></span><span>© 2026 ANUSH</span></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
